@@ -1,0 +1,112 @@
+/* ======= Light Theme ======= */
+body.Light,
+[data-testid="stAppViewContainer"].Light,
+.stApp.Light {
+  background-color: #fafafa;
+  color: #212121;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+[data-testid="stSidebar"].Light {
+  background-color: #f0f0f0;
+}
+
+.Light .stTextInput input,
+.Light .stTextArea textarea,
+.Light .stSelectbox div {
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.Light .stSelectbox label {
+  color: #333;
+}
+
+.Light .stButton button {
+  background-color: #ff4b4b;
+  color: #fff;
+  border-radius: 12px;
+  padding: 10px 20px;
+}
+
+.Light .stButton button:hover {
+  background-color: #ff6b6b;
+}
+
+.Light h1, .Light h2, .Light h3, .Light h4 {
+  color: #222;
+}
+.Light [data-testid="stTabs"] {
+  background-color: #ffffff;
+}
+
+/* ======= Dark Theme ======= */
+body.Dark,
+[data-testid="stAppViewContainer"].Dark,
+.stApp.Dark {
+  background-color: #121212;
+  color: #f4f4f4;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+[data-testid="stSidebar"].Dark {
+  background-color: #1c1c1c;
+}
+
+.Dark .stTextInput input,
+.Dark .stTextArea textarea,
+.Dark .stSelectbox div {
+  background-color: #1e1e1e !important;
+  color: #f4f4f4 !important;
+  border: 1px solid #444 !important;
+  border-radius: 6px;
+  padding: 8px;
+}
+
+.Dark .stSelectbox label {
+  color: #f4f4f4 !important;
+}
+
+.Dark .stButton button {
+  background-color: #ff4081 !important;
+  color: #fff !important;
+}
+
+.Dark .stButton button:hover {
+  background-color: #ff5c94 !important;
+}
+
+.Dark h1, .Dark h2, .Dark h3, .Dark h4 {
+  color: #fff;
+}
+
+.Dark [data-testid="stTabs"] {
+  background-color: #1a1a1a;
+}
+
+
+.resume-box, .letter-box {
+  background-color: inherit;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .resume-box, .letter-box {
+    padding: 12px;
+    font-size: 15px;
+  }
+}
+body.Light, body.Dark {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.resume-box, .letter-box {
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
